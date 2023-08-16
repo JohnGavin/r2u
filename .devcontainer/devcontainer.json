@@ -12,11 +12,11 @@
             // But turn off Radian (R console), devtools, extre Markdown support and debugger
             // You can add each of these individually or jointly. See the table at
             // https://github.com/rocker-org/devcontainer-features/blob/main/src/r-apt/README.md#options
-            "installRadian": false,
-            "installDevTools": false,
-            "installRMarkdown": false,
-            "installVscDebugger": false,
-            "useTesting": false
+            "installRadian": true,
+            "installDevTools": true,
+            "installRMarkdown": true,
+            "installVscDebugger": true,
+            "useTesting": true
         }
 
     },
@@ -31,8 +31,8 @@
                 "r.plot.useHttpgd": true,
                 //
                 // turn these two on with Radian
-                //"r.rterm.linux": "/usr/local/bin/radian",
-                //"r.bracketedPaste": true,
+                "r.rterm.linux": "/usr/local/bin/radian",
+                "r.bracketedPaste": true,
                 //
                 // some guidance for the editor on R files
                 "[r]": {
